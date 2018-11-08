@@ -13,8 +13,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @RequestMapping(value = "/app")
 public class AppRestController {
 	
-	private static final String APP_INFO = "http://localhost:8080/actuator/info";
-	private static final String APP_HEALTH = "http://localhost:8080/actuator/health";
+	private static final String APP_INFO = "http://localhost/spring-docker-war/actuator/info";
+	private static final String APP_HEALTH = "http://localhost/spring-docker-war/actuator/health";
 	
 	@RequestMapping(value = "/")
 	public Model getAppInfoAndHealth(Model model) {

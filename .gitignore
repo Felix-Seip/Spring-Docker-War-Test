@@ -67,3 +67,4 @@ target/spring-docker-war/WEB-INF/classes/com/prostep/examples/HealthObject.class
 target/spring-docker-war.war
 target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
 target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div style="margin: auto; width: 50%; margin-top: 10%">
+		<h1>Application Health and Info</h1>
+		<table th:object="${info}">
+			<tr>
+				<th>Application Info</th>
+			</tr>
+			<tr>
+				<th>Application Name:</th>
+				<td th:text="${info.getApplicationName()}"></td>
+			</tr>
+			<tr>
+				<th>Author:</th>
+				<td th:text="${info.getAuthor()}"></td>
+			</tr>
+			<tr>
+				<th>Last Modified:</th>
+				<td th:text="${info.getLastModified()}"></td>
+			</tr>
+			<tr>
+				<th style="min-width:300px">Application Description:</th>
+				<td th:text="${info.getDescription()}"></td>
+			</tr>
+		</table>
+		<br/>
+		<table th:object="${health}">
+			<tr>
+				<th style="min-width:300px">Application Health:</th>
+				<td th:text="${health.getStatus()}"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
